@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- end od google fonts -->
+    <!-- font awasome css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
+    />
+    <!--end of  font awasome icons -->
+
+    <title>Edumake</title>
+    <!-- style css -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <a href="index.html">
+            <img src="./img/logo.png" alt="logo" />
+          </a>
+        </div>
+        <div class="nav-links">
+          <i class="fa fa-times" onclick="hidemenu()"></i>
+          <ul>
+            <li><a href="">home</a></li>
+            <li><a href="">about</a></li>
+            <li><a href="">course</a></li>
+            <li><a href="">blog</a></li>
+            <li><a href="">contact</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showmenu()"></i>
+      </nav>
+      <div class="hero">
+        <h1>biggest university in the world</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio minus
+          eveniet minima recusandae,<br />
+          consectetur quis aliquid corporis culpa alias ab!
+        </p>
+        <a class="hero-btn" href="">Visit Us To Know More</a>
+      </div>
+    </header>
+
+    <script>
+      const navLinks = document.querySelector(".nav-links");
+
+      function showmenu() {
+        navLinks.style.right = "0";
+      }
+      function hidemenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
